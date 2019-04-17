@@ -1,0 +1,70 @@
+﻿@using Tourtech.Models.Shared
+@using Services.Models.Shared
+@model IEnumerable<ContentSectionViewModel>
+
+<ul class="sections">
+    @foreach (var section in Model)
+    {
+        if (section is HeadingSectionViewModel)
+        {
+            HeadingSectionViewModel heading = (HeadingSectionViewModel)section;
+
+            <li class="section heading-section">
+                <h3>
+                    @heading.Text
+                </h3>
+            </li>
+        }
+        else if (section is ParagraphSectionViewModel)
+        {
+            ParagraphSectionViewModel paragraph = (ParagraphSectionViewModel)section;
+
+            <li class="section">
+                <p>
+                    @paragraph.Text
+                </p>
+            </li>
+        }
+        else if (section is ImageSectionViewModel)
+        {
+            ImageSectionViewModel image = (ImageSectionViewModel)section;
+
+            <li class="section image-section">
+                <img src="@image.Image.ImageUrl" alt="@image.Image.Title" />
+            </li>
+        }
+        else if (section is VideoSectionViewModel)
+        {
+            VideoSectionViewModel video = (VideoSectionViewModel)section;
+
+            <li class="section video-section">
+                <div class="video-section-inside">
+                    <iframe class="youtube-video-iframe" width="560" height="315" src="@video.Url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </li>
+        }
+        else if (section is CompositeSectionViewModel)
+        {
+            CompositeSectionViewModel composite = (CompositeSectionViewModel)section;
+
+            <li class="animate-slide-appear-initial js-animate-slide-appear section composite-section @(composite.ImageAlignment == RelativeDirection.Left ? "left-align" : "right-align" )">
+                <div class="row content-main">
+                    <div class="col-md-5 col-12 content-main-text slide-appear-item">
+                        <h3>
+                            @composite.Heading
+                        </h3>
+                        @foreach (var paragraph in composite.Paragraphs)
+                        {
+                            <p>
+                                @paragraph
+                            </p>
+                        }
+                    </div>
+                    <div class="col-md-7 col-12 content-main-image slide-appear-item">
+                        <img src="@composite.Image.ImageUrl" alt="@composite.Image.Title">
+                    </div>
+                </div>
+            </li>
+        }
+    }
+</ul>

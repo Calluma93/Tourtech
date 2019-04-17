@@ -1,0 +1,214 @@
+@mixin nav-lines($color) {
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $color;
+        margin: auto;
+        width: 100%;
+   }
+
+   &:after {
+        display: none;
+   }
+
+   &:last-child {
+       
+        &:after {
+           display: block;
+       }
+   }
+
+   a {
+       display: block;
+   }
+}
+
+// Whole menu container
+nav.menu-container {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    width: 100%;
+    text-transform: uppercase;
+    
+    @include above($mobile + 1) {
+        width: 100%;
+        max-width: 420px;
+    }
+    
+    @include mobile() {
+        margin: 0 auto;
+        padding: 0;
+        display: none;
+        margin: 20px 0;
+    }
+
+    > ul {
+        margin-bottom: 0;
+
+        @include mobile() {
+            width: 100%;
+            max-width: 270px;
+            margin: 0 auto;
+        }
+    }
+
+    &.show {
+
+        @include mobile() {
+            display: block;
+        }
+    }
+
+}
+
+a.menu-link, a.sub-menu-link {
+    position: relative;
+
+    @include mobile() {
+        padding: 0.5rem;
+    }
+}
+
+// 1st level
+span.menu-link-wrapper {
+    position: relative;
+    
+    // Animated underline
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 0;
+        height: 1px;
+        background: $white;
+
+        @include above(1200px) {
+            transition: width 0.3s ease-in-out;
+        }
+
+        .has-children & {
+            display: none;
+        }
+    }
+
+    &:hover {
+
+        &:before {
+
+            @include above(1200px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// First level
+li.menu-list-item {
+
+    @include above($mobile + 1) {
+        padding: 10px 0;
+        position: relative;
+    }
+
+    @include mobile() {
+        @include nav-lines(rgba($white, 0.3));
+    }
+
+    &:not(:last-child) {
+        
+        &:after {
+
+            @include above($mobile + 1) {
+                content: '';
+                width: 2px;
+                height: 24px;
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 0;
+                background: $white;
+            }
+        }
+    }
+
+    &:hover .sub-menu-container {
+
+        @include above($mobile + 1) {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.4s cubic-bezier(0, 0.56, 0.75, 0.87), visibility 0s, left 0.4s cubic-bezier(0, 0.56, 0.21, 0.99);
+            left: 50%;
+        }
+    }
+}
+
+// 2nd level
+ul.sub-menu-container {
+    transition: opacity 0.2s linear, visibility 0s 0.2s, left 0s linear 0.2s;
+    background: $black; 
+    font-size: 14px;
+    
+    @include above($mobile + 1) {
+        visibility: hidden;
+        position: absolute;
+        opacity: 0; 
+        top: 100%;
+        left: calc(50% - 19px);
+        transform: translate(-50%, 0);
+        z-index: 2;
+        width: 100%;
+        box-shadow: 0 2px 5px 0 rgba($black, 0.35);
+    }
+
+    @include mobile() {
+        border-top: 1px solid rgba($white, 0.3);
+    }
+}
+
+// 2nd level
+.sub-menu-list-item {
+    background: $black;
+    transition: background-color 0.3s linear;
+    font-size: 12px;
+    
+    @include above($mobile + 1) {
+        @include nav-lines(rgba($white, 0.5));
+    }
+    
+    @include mobile() {
+        @include nav-lines(rgba($primary-color, 0.5));
+        width: 100%;
+        margin: 0 auto;
+        max-width: 160px;
+    }
+
+    &:hover {
+
+        @include above($mobile + 1) {
+            background: #222222;
+        }
+    }
+    
+    &:last-child {
+
+        &:after {
+            display: none;
+        }
+    }
+
+    &:first-child {
+
+        &:before {
+            display: none;
+        }
+    }
+
+    a {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,41 @@
+.animate-fade-appear-initial {
+
+    .slick-slide, .appear-item {
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+
+    &.animate-fade-appear {
+
+        .slick-slide, .appear-item {
+            opacity: 1;
+        }
+    }
+}
+
+.animate-slide-appear-initial {
+    position: relative;
+    opacity: 0;
+
+    &.left-align {
+        left: -70px;
+        transition: opacity 0.8s cubic-bezier(0, 0.56, 0.75, 0.87), left 0.8s cubic-bezier(0, 0.56, 0.21, 0.99);
+    }
+    
+    &.right-align {
+        right: -70px;
+        transition: opacity 0.8s cubic-bezier(0, 0.56, 0.75, 0.87), right 0.8s cubic-bezier(0, 0.56, 0.21, 0.99);
+    }
+
+    &.animate-slide-appear {
+        opacity: 1;
+        
+        &.left-align {
+            left: 0;
+        }
+    
+        &.right-align {
+            right: 0;
+        }
+    }
+}

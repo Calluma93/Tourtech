@@ -1,0 +1,34 @@
+.video-section, .image-section {
+    padding: 40px 0 50px;
+    
+    @include mobile() {
+        padding: 25px 0;
+    }
+}
+
+.video-section-inside {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+
+    .youtube-video-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.products-section {
+    padding-top: 40px;
+}
+
+.heading-section {
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}

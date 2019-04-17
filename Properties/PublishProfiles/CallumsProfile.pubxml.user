@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Callum\Documents\Releases\tourtechrelease</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/25/2013 15:40:12</publishTime>
+    </File>
+    <File Include="bin/Ninject.dll">
+      <publishTime>10/22/2017 08:31:48</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Common.dll">
+      <publishTime>10/23/2017 07:33:26</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Common.WebHost.dll">
+      <publishTime>10/23/2017 07:33:26</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Mvc.dll">
+      <publishTime>10/23/2017 08:19:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/Services.dll">
+      <publishTime>11/09/2018 12:52:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/Tourtech.dll">
+      <publishTime>11/09/2018 12:52:27</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/11/2018 15:00:31</publishTime>
+    </File>
+    <File Include="Images/Banners/accessories.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Banners/cables.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Banners/cases.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Banners/drums-alt.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Banners/drums.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Banners/stands.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Category/audio-cable.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Category/instru-cable.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Category/mic-cable.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Category/product-accessories.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Category/product-cables.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Category/product-cases.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Category/product-drums.jpg">
+      <publishTime>10/31/2018 10:12:48</publishTime>
+    </File>
+    <File Include="Images/Category/product-microphones.jpg">
+      <publishTime>10/31/2018 10:12:48</publishTime>
+    </File>
+    <File Include="Images/Category/product-pro-range.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Category/product-speakers.jpg">
+      <publishTime>10/31/2018 10:12:48</publishTime>
+    </File>
+    <File Include="Images/Category/product-stands.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Category/TOURTECH-drums-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Content/adslot-1.jpg">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/adslot-2.jpg">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/adslot-3.jpg">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/adslot-4.jpg">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/banner-example.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Content/cables-medium.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/cables.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/drums-medium.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Content/drums.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Content/hero-large-banner.jpg">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/hero-medium-banner.jpg">
+      <publishTime>10/17/2018 15:11:42</publishTime>
+    </File>
+    <File Include="Images/Content/hero-short-banner.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Content/nav-hamburger-menu.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/puff-accessories.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/puff-cables.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/puff-drums.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Content/puff-stands.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/social-fb.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/social-ig.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/social-tw.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/social-yt.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/stands-medium.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/stands.jpg">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Images/Content/stripes-small.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/tourtech-logo-main.png">
+      <publishTime>10/17/2018 10:24:23</publishTime>
+    </File>
+    <File Include="Images/Content/TT-desktop-logo.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Content/TT-mobile-logo.png">
+      <publishTime>10/15/2018 17:26:20</publishTime>
+    </File>
+    <File Include="Images/Product/bags.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/capos.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/drum-gallery-1.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drum-gallery-2.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drum-gallery-3.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drum-gallery-4.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drums-1.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drums-2.jpg">
+      <publishTime>11/05/2018 09:53:20</publishTime>
+    </File>
+    <File Include="Images/Product/drums-TT-12S.jpg">
+      <publishTime>10/15/2018 09:49:24</publishTime>
+    </File>
+    <File Include="Images/Product/drums-TT-12SM.jpg">
+      <publishTime>10/15/2018 09:49:24</publishTime>
+    </File>
+    <File Include="Images/Product/drums-TT-16S.jpg">
+      <publishTime>10/15/2018 09:49:24</publishTime>
+    </File>
+    <File Include="Images/Product/drums-TT-22M.jpg">
+      <publishTime>10/15/2018 09:49:24</publishTime>
+    </File>
+    <File Include="Images/Product/hard-case.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/instrument-stands.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-2.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-3.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-4.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-5.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-6.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-7.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/Lifestyle/TOURTECH-drums-8.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/power-supply.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/pro-audio-stands.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12S-drums-gallery-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12S-drums-gallery-2.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12S-drums-gallery-3.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12SM-drums-gallery-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12SM-drums-gallery-2.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12SM-drums-gallery-3.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-12SM-drums-gallery-4.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-16S-drums-gallery-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-16S-drums-gallery-2.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-16S-drums-gallery-3.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-16S-drums-gallery-4.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-22M-drums-gallery-1.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-22M-drums-gallery-2.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-22M-drums-gallery-3.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/TT-22M-drums-gallery-4.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Product/tuners.jpg">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Images/Retailer/buy-andertons.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Retailer/buy-guitarguitar.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Retailer/buy-pmt.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Retailer/mob-buy-andertons.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Retailer/mob-buy-guitarguitar.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="Images/Retailer/mob-buy-pmt.jpg">
+      <publishTime>10/15/2018 10:47:37</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/11/2018 16:31:43</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>11/09/2018 13:38:35</publishTime>
+    </File>
+    <File Include="Views/Category/Index.cshtml">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/09/2018 12:51:23</publishTime>
+    </File>
+    <File Include="Views/Product/Index.cshtml">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Views/Products/Index.cshtml">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Views/Shared/NotFound.cshtml">
+      <publishTime>10/16/2018 16:45:56</publishTime>
+    </File>
+    <File Include="Views/Shared/_Banner.cshtml">
+      <publishTime>10/31/2018 10:12:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Breadcrumb.cshtml">
+      <publishTime>10/18/2018 16:11:23</publishTime>
+    </File>
+    <File Include="Views/Shared/_ContentSection.cshtml">
+      <publishTime>10/17/2018 12:45:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_ContentSections.cshtml">
+      <publishTime>11/09/2018 12:33:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/09/2018 13:38:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_Leaderboard.cshtml">
+      <publishTime>10/17/2018 11:51:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_LineHeading.cshtml">
+      <publishTime>10/16/2018 16:45:56</publishTime>
+    </File>
+    <File Include="Views/Shared/_Menu.cshtml">
+      <publishTime>10/31/2018 10:12:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_ProductsSection.cshtml">
+      <publishTime>11/09/2018 12:51:23</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>10/15/2018 09:49:24</publishTime>
+    </File>
+    <File Include="Views/WhereToBuy/Index.cshtml">
+      <publishTime>11/09/2018 12:51:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/11/2018 15:00:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/17/2018 10:26:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

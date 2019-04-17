@@ -1,0 +1,42 @@
+.composite-section {
+
+    &:not(:first-child) {
+        @include line-before(); 
+    }
+}
+
+.content-main {
+    align-items: center;
+    
+    .content-main-text {
+
+        @include mobile() {
+            margin-bottom: 20px;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: normal;
+
+        @include mobile() {
+            font-size: 16px;
+        }
+    }
+
+    .button-outline {
+        width: 100%;
+    }
+
+    .content-main-image {
+
+        img {
+            border: 1px solid $mid-shade;
+        }
+    }
+}

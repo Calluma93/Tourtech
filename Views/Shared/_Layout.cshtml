@@ -1,0 +1,54 @@
+﻿@model Tourtech.Models.Shared.LayoutViewModel
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+@RenderSection("Meta", required: false)
+
+<link rel="apple-touch-icon" href="~/apple-touch-icon.png">
+
+@Scripts.Render("~/Scripts/Main")
+
+<header>
+    <div class="main-header">
+        <div class="container">
+            <div class="header-inside">
+                <a class="logo-stripes" href="@Url.Action("Index", "Home")">
+                    <img src="@Model.StripesImage.ImageUrl" alt="@Model.StripesImage.Title">
+                </a>
+                <a class="logo" href="@Url.Action("Index", "Home")">
+                    <picture>
+                        <source srcset="@Model.LogoImage.MobileImageUrl" media="(max-width: 767px)">
+                        <img srcset="@Model.LogoImage.ImageUrl" alt="@Model.LogoImage.Title">
+                    </picture>
+                </a>
+                <div class="hamburger js-hamburger">
+                    <img src=@Model.HamburgerImage.ImageUrl alt="@Model.HamburgerImage.Title">
+                </div>
+                @Html.Partial("_Menu", Model.MainMenu)
+            </div>
+        </div>
+    </div>
+</header>
+
+@RenderBody()
+
+<footer>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <p class="copyright">TOURTECH &copy; 2018, All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

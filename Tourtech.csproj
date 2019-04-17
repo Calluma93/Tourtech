@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E288E975-9A0B-431F-80B3-E49A666B05CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tourtech</RootNamespace>
+    <AssemblyName>Tourtech</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.3.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.3\lib\net45\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.3.0\lib\net45\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common.WebHost, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.WebHost.3.3.0\lib\net45\Ninject.Web.Common.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.3.0\lib\net45\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Web.config" />
+    <None Include="Properties\PublishProfiles\tourtech-uat - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\Banners\accessories.jpg" />
+    <Content Include="Images\Banners\cables.jpg" />
+    <Content Include="Images\Banners\cases.jpg" />
+    <Content Include="Images\Banners\drums-alt.jpg" />
+    <Content Include="Images\Banners\drums.jpg" />
+    <Content Include="Images\Banners\stands.jpg" />
+    <Content Include="Images\Banners\tt-12s-drum-kit.jpg" />
+    <Content Include="Images\Banners\tt-12sm-drum-kit.jpg" />
+    <Content Include="Images\Category\audio-cable.jpg" />
+    <Content Include="Images\Category\instru-cable.jpg" />
+    <Content Include="Images\Category\mic-cable.jpg" />
+    <Content Include="Images\Category\product-accessories.jpg" />
+    <Content Include="Images\Category\product-cables.jpg" />
+    <Content Include="Images\Category\product-microphones.jpg" />
+    <Content Include="Images\Category\product-speakers.jpg" />
+    <Content Include="Images\Category\TOURTECH-drums-1.jpg" />
+    <Content Include="Images\Content\cables-medium.jpg" />
+    <Content Include="Images\Content\cables.jpg" />
+    <Content Include="Images\Content\drums-medium.jpg" />
+    <Content Include="Images\Content\drums.jpg" />
+    <Content Include="Images\Content\hero-short-banner.jpg" />
+    <Content Include="Images\Content\nav-hamburger-menu.png" />
+    <Content Include="Images\Content\puff-accessories.jpg" />
+    <Content Include="Images\Content\puff-cables.jpg" />
+    <Content Include="Images\Content\puff-drums.jpg" />
+    <Content Include="Images\Content\puff-stands.jpg" />
+    <Content Include="Images\Content\social-fb.png" />
+    <Content Include="Images\Content\social-ig.png" />
+    <Content Include="Images\Content\social-tw.png" />
+    <Content Include="Images\Content\social-yt.png" />
+    <Content Include="Images\Content\stands-medium.jpg" />
+    <Content Include="Images\Content\stands.jpg" />
+    <Content Include="Images\Content\stripes-small.png" />
+    <Content Include="Images\Content\tourtech-logo-main-white.png" />
+    <Content Include="Images\Content\tourtech-logo-main.png" />
+    <Content Include="Images\Content\TT-desktop-logo.png" />
+    <Content Include="Images\Content\TT-mobile-logo.png" />
+    <Content Include="Images\Product\bags.jpg" />
+    <Content Include="Images\Product\capos.jpg" />
+    <Content Include="Images\Product\drum-gallery-1.jpg" />
+    <Content Include="Images\Product\drum-gallery-2.jpg" />
+    <Content Include="Images\Product\drum-gallery-3.jpg" />
+    <Content Include="Images\Product\drum-gallery-4.jpg" />
+    <Content Include="Images\Product\drums-1.jpg" />
+    <Content Include="Images\Product\drums-2.jpg" />
+    <Content Include="Images\Product\hard-case.jpg" />
+    <Content Include="Images\Product\instrument-stands.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-1.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-2.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-3.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-4.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-5.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-6.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-7.jpg" />
+    <Content Include="Images\Product\Lifestyle\TOURTECH-drums-8.jpg" />
+    <Content Include="Images\Product\power-supply.jpg" />
+    <Content Include="Images\Product\pro-audio-stands.jpg" />
+    <Content Include="Images\Product\TT-12S-drums-gallery-1.jpg" />
+    <Content Include="Images\Product\TT-12S-drums-gallery-2.jpg" />
+    <Content Include="Images\Product\TT-12S-drums-gallery-3.jpg" />
+    <Content Include="Images\Product\TT-12SM-drums-gallery-1.jpg" />
+    <Content Include="Images\Product\TT-12SM-drums-gallery-2.jpg" />
+    <Content Include="Images\Product\TT-12SM-drums-gallery-3.jpg" />
+    <Content Include="Images\Product\TT-12SM-drums-gallery-4.jpg" />
+    <Content Include="Images\Product\TT-16S-drums-gallery-1.jpg" />
+    <Content Include="Images\Product\TT-16S-drums-gallery-2.jpg" />
+    <Content Include="Images\Product\TT-16S-drums-gallery-3.jpg" />
+    <Content Include="Images\Product\TT-16S-drums-gallery-4.jpg" />
+    <Content Include="Images\Product\TT-22M-drums-gallery-1.jpg" />
+    <Content Include="Images\Product\TT-22M-drums-gallery-2.jpg" />
+    <Content Include="Images\Product\TT-22M-drums-gallery-3.jpg" />
+    <Content Include="Images\Product\TT-22M-drums-gallery-4.jpg" />
+    <Content Include="Images\Product\tuners.jpg" />
+    <Content Include="Images\Retailer\buy-andertons.jpg" />
+    <Content Include="Images\Retailer\buy-guitarguitar.jpg" />
+    <Content Include="Images\Retailer\buy-pmt.jpg" />
+    <Content Include="Images\Category\product-cases.jpg" />
+    <Content Include="Images\Category\product-drums.jpg" />
+    <Content Include="Images\Category\product-pro-range.jpg" />
+    <Content Include="Images\Category\product-stands.jpg" />
+    <Content Include="Images\Retailer\mob-buy-andertons.jpg" />
+    <Content Include="Images\Retailer\mob-buy-guitarguitar.jpg" />
+    <Content Include="Images\Retailer\mob-buy-pmt.jpg" />
+    <Content Include="Images\Product\drums-TT-12SM.jpg" />
+    <Content Include="Images\Product\drums-TT-12S.jpg" />
+    <Content Include="Images\Product\drums-TT-16S.jpg" />
+    <Content Include="Images\Product\drums-TT-22M.jpg" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\_Banner.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\NinjectConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\WhereToBuyController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ContentSectionHelper.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\ProductHelper.cs" />
+    <Compile Include="Helpers\TourtechUrlHelper.cs" />
+    <Compile Include="Helpers\BreadcrumbHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Models\Category\CategoryViewModel.cs" />
+    <Compile Include="Models\Shared\CompositeSectionViewModel.cs" />
+    <Compile Include="Models\Home\CategoryTileViewModel.cs" />
+    <Compile Include="Models\Home\BannerViewModel.cs" />
+    <Compile Include="Models\Home\HomeViewModel.cs" />
+    <Compile Include="Models\Products\CategoryViewModel.cs" />
+    <Compile Include="Models\Products\ProductsViewModel.cs" />
+    <Compile Include="Models\Shared\ContentSectionViewModel.cs" />
+    <Compile Include="Models\Shared\HeadingSectionViewModel.cs" />
+    <Compile Include="Models\Shared\VideoSectionViewModel.cs" />
+    <Compile Include="Models\Shared\ImageSectionViewModel.cs" />
+    <Compile Include="Models\Shared\PageViewModel.cs" />
+    <Compile Include="Models\Shared\ParagraphSectionViewModel.cs" />
+    <Compile Include="Models\Product\ProductViewModel.cs" />
+    <Compile Include="Models\Shared\ImageViewModel.cs" />
+    <Compile Include="Models\Shared\LayoutViewModel.cs" />
+    <Compile Include="Models\Shared\MenuItemViewModel.cs" />
+    <Compile Include="Models\Shared\SubPageViewModel.cs" />
+    <Compile Include="Models\Shared\BreadcrumbItemViewModel.cs" />
+    <Compile Include="Models\Shared\BreadcrumbViewModel.cs" />
+    <Compile Include="Models\Shared\ProductOverviewViewModel.cs" />
+    <Compile Include="Models\Shared\ResponsiveImageViewModel.cs" />
+    <Compile Include="Models\WhereToBuy\RetailerViewModel.cs" />
+    <Compile Include="Models\WhereToBuy\WhereToBuyViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\WhereToBuy\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Shared\_Breadcrumb.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Shared\_LineHeading.cshtml" />
+    <Content Include="Views\Shared\_ProductsSection.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Shared\_ContentSections.cshtml" />
+    <Content Include="Views\Shared\_MetaSection.cshtml" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{5caa25ff-2200-468a-9ad6-3cf31102c37a}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57813</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57813/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>cd $(ProjectDir)
+npm run build</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

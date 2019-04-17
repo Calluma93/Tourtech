@@ -1,0 +1,18 @@
+﻿@model Tourtech.Models.Category.CategoryViewModel
+
+@section Meta{
+    @Html.Partial("_MetaSection", Model)
+}
+
+@Html.Partial("_Banner", Model)
+
+<div class="products-page container">
+
+    @Html.Partial("_Breadcrumb", Model.Breadcrumb)
+    @Html.Partial("_LineHeading", Model.MainHeading)
+    @Html.Partial("_ContentSections", Model.Sections)
+    @Html.Partial("_ProductsSection", Model.Products)
+</div>
+
+
+

@@ -1,0 +1,28 @@
+﻿@model Tourtech.Models.WhereToBuy.WhereToBuyViewModel
+
+@Html.Partial("_Banner", Model)
+
+@section Meta{
+    @Html.Partial("_MetaSection", Model)
+}
+
+<div class="where-to-buy-page container">
+    @Html.Partial("_Breadcrumb", Model.Breadcrumb)
+    @Html.Partial("_LineHeading", "Where to buy TOURTECH")
+
+    <ul class="retailers row animate-fade-appear-initial js-animate-fade-appear">
+        @foreach (var retailer in Model.Retailers)
+        {
+            <li class="col-12 col-lg-4 appear-item retailer-list-item">
+                <a style="background:@retailer.BackgroundColourHex" target="_blank" class="retailer-link" href="@retailer.WebsiteUrl">
+                    <h4>Available in store & online</h4>
+                    <img src="@retailer.DesktopImageUrl" alt="@retailer.Name" />
+                    <span style="color:@retailer.TextColourHex" class="button-white">
+                        @retailer.WebsiteUrlForDisplay
+                    </span>
+                </a>
+            </li>
+        }
+    </ul>
+
+</div>

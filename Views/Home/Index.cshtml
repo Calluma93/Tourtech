@@ -1,0 +1,68 @@
+﻿@model Tourtech.Models.Home.HomeViewModel
+
+@section Meta{
+    @Html.Partial("_MetaSection", Model)
+}
+
+<div class="container-fluid">
+    <div class="main-banner">
+        <div class="row banner-slider">
+            @foreach (var banner in Model.Banners)
+            {
+                <div class="banner-wrapper @(banner.AlternateColorTheme ? "white-theme" : "")">
+                    <picture>
+                        <source srcset="@banner.Image.MobileImageUrl" media="(max-width: 767px)"> 
+                        <img srcset="@banner.Image.ImageUrl" alt="@banner.Image.Title" class="main-image">
+                    </picture>
+                    <div class="overlay-wrapper">
+                        <div class="overlay-image">
+                            <img src="@banner.BannerOverlayLogo.ImageUrl" alt="@banner.BannerOverlayLogo.Title">
+                        </div>
+                        <div class="overlay-text">
+                            @banner.OverlayText
+                        </div>
+                        <div>
+                            <a class="overlay-button" href="@banner.OverlayLinkUrl">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="main-heading">
+        <h1>
+            @Model.MainHeading
+        </h1>  
+    </div>
+    
+    <div class="category-tiles animate-fade-appear-initial js-animate-fade-appear">
+        <div class="container">
+            <div class="row carousel">
+                @foreach (var tile in Model.CategoryTiles)
+                {
+                    <div class="category-tile">
+                        <a href="@tile.LinkUrl">
+                            <img src="@tile.Image.ImageUrl" alt="@tile.Image.Title"/>
+                            <div class="tile-text">
+                                @tile.Text
+                            </div>
+                            <div class="tile-wrapper">
+                                <div class="button-outline">
+                                    @tile.LinkText
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="line-heading with-spacing mt-5 appear-item">
+            <h2>New Product Section</h2>
+        </div>
+        @Html.Partial("_ProductsSection", Model.Products)
+    </div>
+</div>

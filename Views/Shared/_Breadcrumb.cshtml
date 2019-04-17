@@ -1,0 +1,11 @@
+﻿@model Tourtech.Models.Shared.BreadcrumbViewModel
+
+<ul class="breadcrumb with-spacing">
+
+    @foreach(var breadcrumb in Model.BreadcrumbItems)
+    {
+        <li>
+            <a href="@breadcrumb.Url">@breadcrumb.Text</a>
+        </li>
+    }
+</ul>
